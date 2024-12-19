@@ -14,18 +14,19 @@ echo "Initializing virtual machine..."
 echo "VM started successfully please install ngrok yourself and open port 5900"
 sudo cpulimit -l 80 -- sudo kvm \
     -cpu host,+topoext,hv_relaxed,hv_spinlocks=0x1fff,hv-passthrough,+pae,+nx,kvm=on,+svm \
-   -smp 2,cores=2 \
-   -M q35,usb=on \
-   -device usb-tablet \
-   -m 4G \
-   -device virtio-balloon-pci \
-   -vga qxl \
-   -net nic -net user,hostfwd=tcp::3389-:3389 \
-   -boot c \
-   -device virtio-serial-pci \
-   -device virtio-rng-pci \
-   -enable-kvm \
-   -cdrom win.iso \
-   -hda /tmp/wi.qcow2 \
-   -vnc :0
+    -smp 2,cores=2 \
+    -M q35,usb=on \
+    -device usb-tablet \
+    -m 4G \
+    -device virtio-balloon-pci \
+    -vga virtio \
+    -net nic,netdev=n0,model=virtio-net-pci \
+    -netdev user,id=n0,hostfwd=tcp::3389-:3389 \
+    -boot c \
+    -device virtio-serial-pci \
+    -device virtio-rng-pci \
+    -enable-kvm \
+    -cdrom win.iso \
+    -hdd /tmp/wi.qcow2 \
+    -vnc :0
    
