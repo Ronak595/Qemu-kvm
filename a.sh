@@ -5,7 +5,7 @@ echo "Updating package list..."
 sudo apt update
 sudo apt install -y qemu-kvm unzip cpulimit python3-pip
 sudo qemu-img create -f qcow2 /tmp/wi.qcow2 110g
-wget -O win.iso "https://software.download.prss.microsoft.com/dbazure/Win10_22H2_English_x64v1.iso?t=7984020e-e88e-4e19-9a76-85bbd937b5d7&P1=1734271537&P2=601&P3=2&P4=Mi3M%2b5vY9JVXEf6TFOz0hadTRrWj53aRbCi8MqHrZlzBx1Zr5Vvyss6lHR7ZQhfJ%2bSe5EpsbwYoDc98r5wx7D3qWqy1HBEF%2fdVBEdQBJxRuxeCxG%2f0pCP75eFoVl9DiJLaoXx0Z0OkwFUIr7Yqhh81KJ9lRiG2AT878V8jALtaqMz3AbZgLgbeVEjYr0tXSoXHaton%2fpBLxfdH6oOzrpv7D%2bwPdbMqvjzpIrj2H%2bdn8QQpg4sMBvnM6hryVABglDfmQKVDwMUYxfznOl3KF9EsT%2bYGmCWvymsqrBiuWFVtW2Uvxyc62FlOk66EB%2f3Wimzi%2fmFBsGWrBGm6%2fMujwkJg%3d%3d"
+wget -O win.iso "https://software.download.prss.microsoft.com/dbazure/Win10_22H2_English_x32v1.iso?t=6ef34c65-35a6-4e75-8da9-51317da3d5b8&P1=1734678539&P2=601&P3=2&P4=dq%2fc3TCRCM1Av7Hvdt%2br3C3wF4V1%2fTFA8QbkiBTgu%2f9LtqxLWOs%2fyYlAc5E1eiT%2bl6LpmFeSf7JqOsZel148JnPLfm0%2bfSgK7gTWF1jISxk956lEOLYOohiK7MLyVruotw0LIARMpACH9nt6C9K2vubUNFq7ib%2b6q5ChIzzUeXLXs3RqWuQHldkV%2ba%2fPmZC1eQcBffyx806c48xG0fEQ%2bs3yAuW%2bZHflRZ%2bh6zFcZsU6J9EkDjkejRyt2cUQA4C4nbR8I4LpN3JKj0dWisFB9LF5hsoUv8VRLVxVNIJXdtiRgcabu5qrqZW2sAYX%2fc62mTm0A4jN79XpdJOJ2upE9Q%3d%3d"
 
 fi
 
