@@ -5,7 +5,7 @@ echo "Updating package list..."
 sudo apt update
 sudo apt install -y qemu-kvm unzip cpulimit python3-pip
 sudo qemu-img create -f qcow2 /tmp/wi.qcow2 110g
-wget -O win.iso "https://software.download.prss.microsoft.com/dbazure/Win10_22H2_English_x32v1.iso?t=0f74118d-105b-4701-8a79-18eb1daeb85e&P1=1734783089&P2=601&P3=2&P4=bB6F1oKSA%2fewisg6wbK4pyAZyxXre2ogMuXS9TbhTGcIoiSDTKHmPvRumRCFbhtcUm6tRHH%2fjX6CoCU2bY2Lo5k3%2b0dz%2bGTZjtQRGCO6jUvxU1lxB4eVPHQPeEce7cfzbVRiZVYLDJsJ58VGw9hglWB9hYo%2fIcpa3zrDoZNLWJypa6RgOaHURTy8Oul2vo4l0DbzujZ%2biEX3gWaEBie0OTqi6czpNeoyV1MdXu0DP9yjELqHcUhN8kmbpcWrLHJlpowsHriMWeGNINuNLhUj%2fkJD2sWqXobH%2b%2beDupCt9VOONXpcVo%2bvOcI%2foPPQ258SQqau2zhN%2b156adi5qoVP7Q%3d%3d"
+wget -O win.iso "https://archive.org/download/fr_windows_10_multi-edition_vl_version_1709_updated_sept_2017_x86_x64/015%20September%202017/en_windows_10_multi-edition_version_1709_updated_sept_2017_x64_dvd_100090817.iso"
 # Launch virtual machine with KVM
 echo "Initializing virtual machine..."
 echo "VM started successfully please install ngrok yourself and open port 5900"
